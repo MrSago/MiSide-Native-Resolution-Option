@@ -27,7 +27,10 @@ public static class NativeResolutionOption
         [HarmonyPatch(typeof(ButtonMouseClick), "OnPointerDown")]
         private static void Postfix(ButtonMouseClick __instance)
         {
-            if (__instance.name != "Button Option Graphics")
+            if (
+                __instance.name != "Button Option Graphics"
+                && __instance.name != "Button Options Graphics"
+            )
             {
                 return;
             }
