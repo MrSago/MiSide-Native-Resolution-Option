@@ -1,5 +1,6 @@
 using HarmonyLib;
 using Il2CppInterop.Runtime;
+using Mod.Properties;
 using UnityEngine;
 #if ML
 using Il2Cpp;
@@ -15,7 +16,7 @@ public static class NativeResolutionOption
 
     public static void Init()
     {
-        _harmony = new("com.nativeresolutionoption.miside");
+        _harmony = new(BuildInfo.PACKAGE);
         _harmony.PatchAll(typeof(Patch));
 
         ModCore.Log("Initialized");
