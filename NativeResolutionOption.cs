@@ -36,7 +36,14 @@ public static class NativeResolutionOption
                 return;
             }
 
-            AddNativeResolutionOption();
+            try
+            {
+                AddNativeResolutionOption();
+            }
+            catch (Exception e)
+            {
+                ModCore.LogError(e);
+            }
         }
 
         private static void AddNativeResolutionOption()
