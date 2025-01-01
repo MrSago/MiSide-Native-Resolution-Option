@@ -27,7 +27,7 @@
 
 - Веселитесь
 
-## Mod Description
+## Mod description
 
 Adds an option in the settings with native resolution, that is, with the maximum monitor resolution and maximum frequency. You can find the option with a text at the end with the monitor frequency (see the Preview section).
 
