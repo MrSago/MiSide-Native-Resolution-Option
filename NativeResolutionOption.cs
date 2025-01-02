@@ -42,7 +42,7 @@ public static class NativeResolutionOption
             }
             catch (Exception e)
             {
-                ModCore.LogError(e);
+                ModCore.LogError(e.Message);
             }
         }
 
@@ -59,10 +59,11 @@ public static class NativeResolutionOption
             }
 
             Resolution resolution = GetNativeResolution();
-            string buttonText =
-                $"{resolution.width}x{resolution.height}@{resolution.refreshRate}Hz";
+            string buttonText = "Native Resolution";
 
-            ModCore.Log($"Native resolution: {buttonText}");
+            ModCore.Log(
+                $"Native resolution: {resolution.width}x{resolution.height}@{resolution.refreshRate}Hz"
+            );
 
             foreach (var buttonInfo in menuCaseOption.scrIccb)
             {
@@ -73,15 +74,14 @@ public static class NativeResolutionOption
                 }
             }
 
+            int index = menuCaseOption.resolutions.IndexOf(resolution);
+            index = index >= 0 ? index : menuCaseOption.resolutions.Count - 1;
             var newButtonInfo = new Interface_ChangeScreenButton_Class_ButtonInfo()
             {
                 buttonText = buttonText,
+                value_int = index,
             };
-
-            int index = menuCaseOption.resolutions.IndexOf(resolution);
-            newButtonInfo.value_int = index >= 0 ? index : menuCaseOption.resolutions.Count - 1;
-
-            menuCaseOption.scrIccb?.Add(newButtonInfo);
+            menuCaseOption.scrIccb.Add(newButtonInfo);
 
             ModCore.Log("Option successfully added");
         }
@@ -104,4 +104,6 @@ public static class NativeResolutionOption
             };
         }
     }
+
+
 }

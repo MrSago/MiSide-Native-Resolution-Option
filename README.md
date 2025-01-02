@@ -1,35 +1,14 @@
 # MiSide-Native-Resolution-Option
 
+## Already included in [KappiMod](https://github.com/MrSago/MiSide-KappiMod)
+
 ## Preview
 
 ![1](./img/preview.png)
 
-## Описание мода
-
-Добавляет опцию в настройках с нативным разрешением, то есть с маскимальным разрешением монитора и максимальной частотой. Найти опцию можно с подписью в конце с частотой монитора (см. раздел Preview).
-
-## Установка мода
-
-- Установить один из поддерживаемых загрузчиков **(я рекомендую поставить BepInEx)**:
-
-  - [BepInEx](https://github.com/BepInEx/BepInEx/releases)
-    - Нам нужен **BepInEx-Unity.IL2CPP-win-x64-6.x.x** (6-ая версия)
-    - Распакуйте содержимое архива в папку с игрой
-  - [MelonLoader](https://github.com/LavaGang/MelonLoader/releases)
-    - Просто используйте **установщик** последней версии
-
-- Скачать [последнюю версию мода](https://github.com/MrSago/MiSide-Native-Resolution-Option/releases/latest) **под нужный загрузчик:**
-
-  - NativeResolutionOption.BepInEx.zip - для BepInEx
-  - NativeResolutionOption.MelonLoader.zip - для MelonLoader
-
-- Извлечь файлы из архива в папку с игрой
-
-- Веселитесь
-
 ## Mod description
 
-Adds an option in the settings with native resolution, that is, with the maximum monitor resolution and maximum frequency. You can find the option with a text at the end with the monitor frequency (see the Preview section).
+Adds an option in the settings with native resolution, that is, with the maximum monitor resolution and maximum frequency. You can find the option in the resolution list with the name "Native Resolution" (see the Preview section).
 
 ## Mod installation
 
@@ -49,3 +28,26 @@ Adds an option in the settings with native resolution, that is, with the maximum
 - Extract files from the archive into the game folder
 
 - Have fun
+
+## Описание мода
+
+Добавляет опцию в настройках с нативным разрешением, то есть с маскимальным разрешением монитора и максимальной частотой. Найти опцию можно в списке разрешений с названием "Native Resolution" (см. раздел Preview).
+
+## Установка мода
+
+- Установить один из поддерживаемых загрузчиков **(я рекомендую поставить BepInEx)**:
+
+  - [BepInEx](https://github.com/BepInEx/BepInEx/releases)
+    - Нам нужен **BepInEx-Unity.IL2CPP-win-x64-6.x.x** (6-ая версия)
+    - Распакуйте содержимое архива в папку с игрой
+  - [MelonLoader](https://github.com/LavaGang/MelonLoader/releases)
+    - Просто используйте **установщик** последней версии
+
+- Скачать [последнюю версию мода](https://github.com/MrSago/MiSide-Native-Resolution-Option/releases/latest) **под нужный загрузчик:**
+
+  - NativeResolutionOption.BepInEx.zip - для BepInEx
+  - NativeResolutionOption.MelonLoader.zip - для MelonLoader
+
+- Извлечь файлы из архива в папку с игрой
+
+- Веселитесь
